@@ -45,9 +45,6 @@
 
     </style>
     <style>
-    body {
-        min-height: 2000px;
-    }
 
     .navbar-static-top {
     margin-bottom: 19px;
