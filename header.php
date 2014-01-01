@@ -15,6 +15,59 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
+
+        /* Sticky footer styles
+        -------------------------------------------------- */
+
+        html,
+        body {
+            height: 100%;
+            /* The html and body elements cannot have any padding or margin. */
+        }
+
+        /* Wrapper for page content to push down footer */
+        #wrap {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Set the fixed height of the footer here */
+        #push,
+        #footer {
+            height: 60px;
+        }
+        #footer {
+            background-color: #66512c;
+        }
+
+        /* Lastly, apply responsive CSS fixes as necessary */
+        @media (max-width: 767px) {
+            #footer {
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+
+
+        /* Custom page CSS
+        -------------------------------------------------- */
+        /* Not required for template or sticky footer method. */
+
+        .container .credit {
+            margin: 20px 0;
+        }
+
+        code {
+            font-size: 80%;
+        }
+
+    </style>
+    <style type="text/css">
         /* bootstrap 3 helpers */
 
         .navbar-form input, .form-inline input {
@@ -24,7 +77,9 @@
         header {
             height:270px;
         }
-
+        body {
+            background-image: url('<?php echo "p193.png";?>');
+        }
         @media (min-width: 979px) {
             #sidebar.affix-top {
                 position: static;
@@ -50,49 +105,12 @@
     margin-bottom: 19px;
     }
     </style>
-    <style type="text/css">
-        .kk {
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-weight: bold;
-            font-size: xx-large;
-            color: #FFF;
-        }
-    </style>
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+
                 <a class="navbar-brand">Identify System</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <!--  <li><a href="datalist.php">Datalist</a></li>
-                    <li><a href="#about">About</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                     <li class="dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                         <ul class="dropdown-menu">
-                             <li><a href="#">Action</a></li>
-                             <li><a href="#">Another action</a></li>
-                             <li><a href="#">Something else here</a></li>
-                             <li class="divider"></li>
-                             <li class="dropdown-header">Nav header</li>
-                             <li><a href="#">Separated link</a></li>
-                             <li><a href="#">One more separated link</a></li>
-                         </ul>
-                     </li>
-                 </ul>
-                 <ul class="nav navbar-nav navbar-right">
-                     <li><a href="../navbar/">Default</a></li>
-                     <li class="active"><a href="./">Static top</a></li>
-                     <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-                 </ul>
-             </div><!--/.nav-collapse -->
         </div>
     </nav>
 </head>
