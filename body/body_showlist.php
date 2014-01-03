@@ -57,7 +57,8 @@
                     $row       = mysql_fetch_array($results, MYSQL_NUM);
                     if($row >= 1)
                     {
-                        while($row = mysql_fetch_array($results))
+                        $retval = mysql_query($query);
+                        while($row =  mysql_fetch_array($retval))
                         {?>
                             <div class="col-md-4">
 
